@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="css/index3.css">
+</head>
+<body>
+     <div class="dishes">
+    <h1 class="dh1">Latest Dishes</h1>
+    <p class ="p1">Discover our latest creations, freshly prepared and full of flavor.</p>
+    <hr>
+<div class="main-div">
+    <div class="div1">
+        <img src="./images/pizza-1latest.avif" class="pizza"/>
+                <h1>Pizza Delight</h1>
+
+        <p class ="p2">Pizza Delight
+Cheesy pizza loaded with fresh toppings
+
+Price: ₹299</p>
+     <a href="addcart.html"><button class ="btn3">Add Cart</button></a>
+    </div>
+    <div class="div2">
+      <img src="./images/burger-latest.avif" class="burgur"/>
+      <h1>Crispy Chicken Burger</h1>
+      <p>Juicy fried chicken patty with lettuce & mayo
+
+Price: ₹199
+
+</p>
+<a href="addcart.html"><button class ="btn3">Add Cart</button></a>
+    </div>
+<div class ="div3">
+    <img src="./images/mexiaca-1.webp" class="mex"/>
+    <h1>Mexican Tacos</h1>
+     <p>Soft tortillas filled with spicy veggies & sauce
+
+Price: ₹179</p>
+<a href="addcart.html"><button class ="btn3"> Add Cart</button></a>
+</div>
+
+
+<div class ="div4">
+    <img src="./images/pasta-1.jpg" class="pasta"/>
+    <h1>Creamy Alfredo Pasta</h1>
+    <p>Rich white sauce pasta with herbs & cheese
+
+Price: ₹299</p>
+<a href="addcart.html"><button class ="btn3"> Add Cart</button></a>
+</div>
+
+
+   </div>
+<hr class="horizontal">
+
+
+
+
+   <div class="desert">
+ 
+   
+        <div class="chocolate">
+    <h1>Chocolate Lava Cake</h1>
+    <img src="./images/s-1.avif" class="choco">
+    <p>Warm chocolate cake with a gooey molten center
+
+Price : ₹149</p>
+<a href="addcart.html"><button class ="btn3" data-price="149"> Add Cart</button></a>
+</div>
+
+
+
+  <div class="chocolate">
+     <h1>Chocolate Lava Cake</h1>
+    <img src="./images/s-1.avif" class="choco">
+    <p>Warm chocolate cake with a gooey molten center
+
+Price : ₹199</p>
+<a href="addcart.html"><button class ="btn3" data-price="199"> Add Cart</button></a>
+  </div>
+
+
+
+  <div class="chocolate">
+     <h1>Chocolate Lava Cake</h1>
+    <img src="./images/s-1.avif" class="choco">
+    <p>Warm chocolate cake with a gooey molten center
+
+Price : ₹150</p>
+<a href="addcart.html"><button class ="btn3" data-price="150"> Add Cart</button></a>
+  </div>
+
+  <div class="chocolate">
+     <h1>Chocolate Lava Cake</h1>
+    <img src="./images/s-1.avif" class="choco">
+    <p>Warm chocolate cake with a gooey molten center
+
+Price : ₹299</p>
+<a href="addcart.html"><button class ="btn3" data-price="299"> Add Cart</button></a>
+  </div>
+  </div>
+
+
+
+
+  <script>
+
+     const totalE1 = document.getElementById("totalAmount");
+     let total = Number(localStorage.getItem("cartTotal"))  || 0;
+     totalE1.textContent = total;
+
+     document.querySelectorAll(".add-cart").forEach((btn3) => {
+        btn3.addEventListener("clcik", () => {
+            const Price = Number(btn3.dataset.price);
+            total += price;
+            localStorage.setItem("cartTotal", total);
+            totalE1.textContent = total;
+
+
+            window.location.href = "addcart.html";
+        });
+     });
+
+  </script>
+</body>
+</html>
