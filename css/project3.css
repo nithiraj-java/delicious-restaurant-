@@ -1,0 +1,21 @@
+h1 {
+    background-color: beige;
+    padding: 15px;
+}
+img {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.bell {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    
+}
